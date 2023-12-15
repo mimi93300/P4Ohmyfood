@@ -1,0 +1,59 @@
+.loader {
+    inset: 0px;
+    z-index: 1;
+    background-color: #FFFFFF;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.9;
+    animation: disappear 500ms 3s forwards;
+    transform-origin: top;
+  }
+  
+  .dot {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: black;
+    margin: 0 15px;
+    animation: loader 3s ease-in-out;
+  }
+  
+  /* Animation pour faire apparaître les points un par un */
+  @keyframes dotAppear {
+    0% {
+      opacity: 0;
+    }
+    25% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  /* Animation pour faire disparaître tous les points après 3 secondes */
+  @keyframes loaderDisappear {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      display: none;
+    }
+  }
+  
+  /* Appliquez les animations aux points avec des délais différents */
+  .d1 {
+    animation: dotAppear 1s 0.5s forwards;
+  }
+  
+  .d2 {
+    animation: dotAppear 1s 1s forwards;
+  }
+  
+  .d3 {
+    animation: dotAppear 1s 1.5s forwards, loaderDisappear 500ms 3s forwards;
+  }
+  

@@ -520,12 +520,13 @@ footer .footer {
 
 .menu {
   top: 283px;
-  width: 100%;
+  width: 1055px;
   height: 1317px;
   border-radius: 25px 25px;
   background: #F7F7F7;
   padding: 20px;
-  padding-bottom: 80px;
+  padding-bottom: 200px;
+  margin-left: 12%;
 }
 
 .h2 .resto-name {
@@ -583,12 +584,13 @@ footer .footer {
   color: rgba(147, 86, 220, 1);
 }
 
-.entrees {
+.entrees .plats .desserts {
   display: flex;
   width: 100%;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  
 }
 
 .food {
@@ -636,7 +638,7 @@ footer .footer {
   white-space: nowrap;
 }
 
-.plat {
+.entrees{
   font-family: 'Roboto';
   font-style: normal;
   margin-top: 0%;
@@ -645,6 +647,27 @@ footer .footer {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
+.plats {
+  font-family: 'Roboto';
+  font-style: normal;
+  margin-top: 0%;
+  margin-bottom: 0%;
+  font-size: 18px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.desserts{
+  font-family: 'Roboto';
+  font-style: normal;
+  margin-top: 0%;
+  margin-bottom: 0%;
+  font-size: 18px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 
 .text-info p {
   font-weight: 300;
@@ -667,7 +690,7 @@ footer .footer {
 
 .checkbar {
   background-color: #99E2D0;
-  margin-right: -3rem;
+  margin-right: -8rem;
   width: 10%;
   display: flex;
   align-items: center;
@@ -714,12 +737,12 @@ footer .footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 50%;
+  width: 40%;
   height: 60px;
   background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
   border-radius: 25px;
   color: #FFFFFF;
   font-weight: 500;
   font-size: 16px;
-  margin-left: 25%;
+  margin-left: 30%;
 }

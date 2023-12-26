@@ -1,20 +1,23 @@
 header nav {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  nav h1 {
-    font-family: "Shrikhand", cursive;
-    text-align: center;
-    background-color: #ffffff;
-    box-shadow: 0px 3px 3px 1px grey;
-    height: 60px;
-    padding: 10px;
-    position: relative;
-    margin: 1px;
-  }
+  display: flex;
+  flex-direction: column;
+}
 
-  header nav {
-    display: flex;
-    flex-direction: column;
+@media (min-width: 768px) {
+  header {
+    padding-top: 2%;
+    padding-bottom: 2%;
   }
+}
+
+nav h1 {
+  font-family: "Shrikhand", sans-serif;
+  
+  text-align: center;
+  background-color: #ffffff;
+  box-shadow: 0px 3px 3px 1px grey;
+  height: 60px;
+  padding: 10px;
+  position: relative;
+  margin: 1px;
+}

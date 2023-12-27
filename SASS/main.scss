@@ -1,12 +1,11 @@
-@import url(SASS\partials\_animation.scss);
-@import url(SASS\partials\_fonctionnement.scss);
-@import url(SASS\partials\_header.scss);
-@import url(SASS\partials\_footer.scss);
-@import url(SASS\partials\_loader.scss);
-@import url(SASS\partials\_menu.scss);
-@import url(SASS\partials\_reservation.scss);
-@import url(SASS\partials\_restaurant.scss);
-
+@import "partials/animation";
+@import "partials/fonctionnement";
+@import "partials/header";
+@import "partials/footer";
+@import "partials/loader";
+@import "partials/menu";
+@import "partials/reservation";
+@import "partials/restaurant";
 
 
 
@@ -427,7 +426,6 @@ footer .footer {
 
   .footer__list {
     justify-content: flex-end;
-    gap: 45px;
   }
 }
 
@@ -484,6 +482,10 @@ footer .footer {
   flex-direction: row;
   display: flex;
   padding: 14px 89px 13px 17px;
+}
+
+.header-menu a{
+  width: 0%;
 }
 
 .fa-arrow-left {
@@ -636,6 +638,7 @@ footer .footer {
   display: flex;
   width: 100%;
   white-space: nowrap;
+  cursor: pointer;
 }
 
 .entrees{
@@ -745,4 +748,5 @@ footer .footer {
   font-weight: 500;
   font-size: 16px;
   margin-left: 30%;
+  cursor: pointer;
 }

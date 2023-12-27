@@ -1,0 +1,147 @@
+/*************Partie Restaurant**********/
+.restaurants {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    background-color: #F6F6F6;
+    padding-left: 17px;
+    padding-right: 18px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  
+  .restaurant-title {
+    display: flex;
+    margin-bottom: 10px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+  
+  }
+  
+  .restaurant-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 18px;
+  }
+  
+  a {
+    width: 100%;
+    text-decoration: none;
+    color: black;
+  }
+  
+  @media (min-width: 768px) {
+    .restaurant-cards {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 45%;
+      gap: 25px;
+      padding-top: 28px;
+    }
+  
+    .card img {
+      object-fit: cover;
+      width: 100%;
+      height: 211px;
+      border-radius: 15px 15px 0 0;
+    }
+  
+    .card {
+      margin-bottom: 20px;
+    }
+  }
+  
+  .card {
+    height: 251px;
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    padding-bottom: 40px;
+  }
+  
+  .card img {
+    object-fit: cover;
+    width: 100%;
+    height: 200px;
+    border-radius: 8px 8px 0 0;
+  }
+  
+  
+  .card-content {
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+  }
+  
+  .card-title {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .card-title,
+  .card-subtitle {
+    text-align: left;
+    margin: 0px;
+  }
+  
+  .card-heart {
+    color: black;
+  }
+  
+  .card-heart {
+    position: relative;
+    display: inline-block;
+    width: 22px;
+    height: 21px;
+  }
+  
+  .card-heart i {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .card-heart i:not(:hover) {
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .card-heart i:hover {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .fa-regular.fa-heart {
+    opacity: 1;
+  }
+  
+  .fas.fa-heart {
+    opacity: 0;
+    color: rgba(147, 86, 220, 1);
+  }
+  
+  
+  .restaurant-cards .card span {
+    display: flex;
+    position: absolute;
+    right: 12%;
+    top: 1170px;
+    width: 100px;
+    height: 30px;
+    justify-content: center;
+    background-color: #99E2D0;
+    padding-top: 4px;
+    color: #1B6150;
+  }
+  
+  @media (min-width: 768px) {
+    .card .new {
+      right: 23%;
+      top: 700px;
+    }
+  }

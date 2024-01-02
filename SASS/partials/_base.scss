@@ -1,0 +1,19 @@
+/****** General ***********/
+*::before,
+::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  max-width: 1440px;
+  font-family: "Roboto", sans-serif;
+}
+
+/*****Banniere resto*****/
+
+.image-restaurant{
+  width: 100%;
+  height: 275px;
+  object-fit: cover;
+}

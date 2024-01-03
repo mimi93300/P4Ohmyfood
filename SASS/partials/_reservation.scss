@@ -40,12 +40,11 @@
   
   .etape {
     position: absolute;
-    top: 25px;
     left: -11px;
     background-color: rgba(147, 86, 220, 1);
     color: white;
     border-radius: 50%;
-    padding: 7px;
+    padding: 7px 10px 7px 10px;
     font-size: 12px;
   }
   
@@ -82,6 +81,8 @@
     border: none;
     padding: 30px;
     background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+    transition: background-color 0.3s ease;
+    box-shadow: 2px 1px 16px -3px #000000;
     border-radius: 25px;
     color: #FFFFFF;
     font-weight: 500;
@@ -89,6 +90,14 @@
     margin-top: 20px;
     margin-bottom: 30px;
     cursor: pointer;
+    transition: background-color 0.5s ease, transform 0.5s ease;
+  }
+
+  .bouton-commander:hover {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
+    transform: matrix(1, 0, 0, 1, 0, 0);
+    transform: scale(1.2); 
   }
 
   .button-link{

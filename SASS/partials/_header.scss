@@ -8,7 +8,7 @@ header {
 }
 
 
-.logo {
+.header .logo {
   padding-bottom: 15px;
   background-color: #ffffff;
   width: 162px;
@@ -50,7 +50,9 @@ header {
 }
 
 .index-link {
-  width: 100%;
+  right: 30%;
+  position: relative;
+  top: -7px;
 }
 
 .fa-arrow-left {

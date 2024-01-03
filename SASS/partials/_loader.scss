@@ -22,13 +22,20 @@
   animation: loader 3s ease-in-out;
 }
 
+.d1{
+  background-color: var(--Primary, #9356DC);
+}
+
 .d2 {
   animation-delay: 0.05ms;
+  background-color: #99E2D0;
 }
 
 .d3 {
   animation-delay: 1ms;
+  background-color: #9356DC;
 }
+
 
 @keyframes loader {
   100% {

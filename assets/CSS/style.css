@@ -26,7 +26,7 @@ header {
   box-shadow: 0px 3px 0px 0px grey;
 }
 
-.logo {
+.header .logo {
   padding-bottom: 15px;
   background-color: #ffffff;
   width: 162px;
@@ -65,7 +65,9 @@ header {
 }
 
 .index-link {
-  width: 100%;
+  right: 30%;
+  position: relative;
+  top: -7px;
 }
 
 .fa-arrow-left {
@@ -156,12 +158,18 @@ footer .footer {
   animation: loader 3s ease-in-out;
 }
 
+.d1 {
+  background-color: var(--Primary, #9356DC);
+}
+
 .d2 {
   animation-delay: 0.05ms;
+  background-color: #99E2D0;
 }
 
 .d3 {
   animation-delay: 1ms;
+  background-color: #9356DC;
 }
 
 @keyframes loader {
@@ -215,20 +223,21 @@ h3 {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 15px;
   background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
-  border-radius: 35px;
+  border-radius: 25px;
   box-shadow: 2px 1px 16px -3px #000000;
   border: none;
   transition: background-color 0.3s ease;
+  cursor: pointer;
+  transition: background-color 0.5s ease, transform 0.5s ease;
 }
 
-.explorer button :hover {
+.explorer button:hover {
   background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
-  border-radius: 25px;
   transform: matrix(1, 0, 0, 1, 0, 0);
   cursor: pointer;
+  transform: scale(1.2);
 }
 
 @media (min-width: 768px) {
@@ -296,9 +305,14 @@ h3 {
   position: relative;
   width: 22px;
   height: 21px;
-  left: 3%;
+  right: 20%;
 }
 
+@media (min-width: 768px) {
+  .coeurs-menu {
+    right: 20%;
+  }
+}
 .coeurs-menu i {
   position: absolute;
   top: 0;
@@ -306,12 +320,15 @@ h3 {
 }
 
 .coeurs-menu i:not(:hover) {
+  border: black;
   opacity: 1;
+  color: white;
   transition: opacity 0.3s ease-in-out;
 }
 
 .coeurs-menu i:hover {
-  opacity: 0;
+  opacity: 1;
+  color: rgb(147, 86, 220);
   transition: opacity 0.3s ease-in-out;
 }
 
@@ -355,14 +372,15 @@ h3 {
   border-radius: 15.0431px;
   margin-bottom: 25px;
   margin-left: 7px;
-  padding-top: 5px;
 }
 
 .description {
+  padding-top: 10px;
+  overflow: hidden;
   display: flex;
   flex-direction: row;
   padding-left: 15px;
-  padding-bottom: 15px;
+  padding-bottom: 10px;
   gap: 36px;
   width: 100%;
 }
@@ -433,18 +451,29 @@ h3 {
 }
 
 .prix {
+  padding-left: 30%;
+  justify-content: end;
   font-weight: 700;
   display: flex;
   align-items: flex-end;
   padding-bottom: 5px;
 }
 
+@media (min-width: 768px) {
+  .prix {
+    position: relative;
+    top: 19px;
+    right: 12%;
+    padding-bottom: 0px;
+  }
+}
 .checkbar {
-  margin-top: -5px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-top: -15px;
   margin-bottom: -15px;
   background-color: #99E2D0;
   margin-right: -10rem;
-  width: 22%;
   border-radius: 0px 15px 15px 0px;
   display: flex;
   align-items: center;
@@ -452,6 +481,7 @@ h3 {
   flex-shrink: 3;
   transition: 1s;
   opacity: 0;
+  cursor: pointer;
 }
 
 .card2:hover .checkbar {
@@ -526,12 +556,11 @@ h3 {
 
 .etape {
   position: absolute;
-  top: 25px;
   left: -11px;
   background-color: rgb(147, 86, 220);
   color: white;
   border-radius: 50%;
-  padding: 7px;
+  padding: 7px 10px 7px 10px;
   font-size: 12px;
 }
 
@@ -565,6 +594,8 @@ h3 {
   border: none;
   padding: 30px;
   background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  transition: background-color 0.3s ease;
+  box-shadow: 2px 1px 16px -3px #000000;
   border-radius: 25px;
   color: #FFFFFF;
   font-weight: 500;
@@ -572,6 +603,14 @@ h3 {
   margin-top: 20px;
   margin-bottom: 30px;
   cursor: pointer;
+  transition: background-color 0.5s ease, transform 0.5s ease;
+}
+
+.bouton-commander:hover {
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
+  transform: matrix(1, 0, 0, 1, 0, 0);
+  transform: scale(1.2);
 }
 
 .button-link {
@@ -711,7 +750,7 @@ h3 {
   right: 5%;
   top: 25px;
   width: 100px;
-  height: 30px;
+  height: 25px;
   justify-content: center;
   background-color: #99E2D0;
   padding-top: 4px;

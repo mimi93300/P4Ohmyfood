@@ -19,6 +19,7 @@ h3 {
   display: flex;
   text-align: center;
   align-items: center;
+  overflow: hidden;
 }
 
 .resa {
@@ -39,11 +40,12 @@ h3 {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 10px 15px 10px 15px;
+  color: white;
   background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
   border-radius: 25px;
   box-shadow: 2px 1px 16px -3px #000000;
   border: none;
-  transition: background-color 0.3s ease;
   cursor: pointer;
   transition: background-color 0.5s ease, transform 0.5s ease;
 }
@@ -119,50 +121,7 @@ h3 {
   padding-left: 15px;
 }
 
-.card-heart {
-  color: black;
-}
 
-.coeurs-menu {
-  position: relative;
-  width: 22px;
-  height: 21px;
-  right: 20%;
-}
-
-@media (min-width: 768px) {
-  .coeurs-menu {
-    right: 20%;
-  }
-}
-
-.coeurs-menu i {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.coeurs-menu i:not(:hover) {
-  border: black;
-    opacity: 1;
-    color: white;
-    transition: opacity 0.3s ease-in-out;
-}
-
-.coeurs-menu i:hover {
-  opacity: 1;
- color: rgba(147, 86, 220, 1);
- transition: opacity 0.3s ease-in-out;
-}
-
-.fa-regular.fa-heart {
-  opacity: 1;
-}
-
-.fa-solid.fa-heart {
-  opacity: 0;
-  color: rgba(147, 86, 220, 1);
-}
 
 .entrees .plats .desserts {
   display: flex;
@@ -230,6 +189,7 @@ h3 {
   text-overflow: ellipsis;
   padding-right: 20%;
   padding-left: 20%;
+  padding-bottom: 10px;
 }
 
 .plats {
@@ -242,6 +202,7 @@ h3 {
   text-overflow: ellipsis;
   padding-right: 20%;
   padding-left: 20%;
+  padding-bottom: 10px;
 }
 
 .desserts {
@@ -254,6 +215,7 @@ h3 {
   text-overflow: ellipsis;
   padding-right: 20%;
   padding-left: 20%;
+  padding-bottom: 10px;
 }
 
 .entrees h2,
@@ -346,3 +308,4 @@ h3 {
   text-align: center;
   align-items: center;
 }
+

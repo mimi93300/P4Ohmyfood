@@ -22,7 +22,6 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 15px;
   box-shadow: 0px 3px 0px 0px grey;
 }
 
@@ -58,24 +57,40 @@ header {
 }
 
 .logo {
-  height: 15%;
-  width: 20%;
-  margin-right: 20px;
-  margin-bottom: 20px;
+  height: 36px;
+  width: 197px;
+  margin-top: 12px;
+  margin-bottom: 10px;
+}
+
+.en-tete {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  height: 63px;
+  box-shadow: 0 1px 9px rgba(0, 0, 0, 0.45);
 }
 
 .index-link {
-  right: 30%;
+  right: 39%;
   position: relative;
   top: -7px;
 }
 
+@media (min-width: 768px) {
+  .index-link {
+    position: relative;
+    top: 0px;
+    right: 30%;
+  }
+}
 .fa-arrow-left {
   color: black;
   align-items: flex-start;
 }
 
-footer .footer {
+.footer .footer {
   width: 100%;
   background-color: #353535;
 }
@@ -88,16 +103,18 @@ footer .footer {
 @media (min-width: 768px) {
   .container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: flex-start;
   }
   .footer__list {
     justify-content: flex-end;
+    gap: 10px;
+    flex-direction: row;
+    padding-left: 92px;
   }
 }
 .container {
-  display: flex;
-  flex-direction: column;
+  flex-direction: row;
   padding: 22px 25px 22px 25px;
   background-color: #353535;
 }
@@ -203,6 +220,7 @@ h3 {
   display: flex;
   text-align: center;
   align-items: center;
+  overflow: hidden;
 }
 
 .resa {
@@ -223,11 +241,12 @@ h3 {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 10px 15px 10px 15px;
+  color: white;
   background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
   border-radius: 25px;
   box-shadow: 2px 1px 16px -3px #000000;
   border: none;
-  transition: background-color 0.3s ease;
   cursor: pointer;
   transition: background-color 0.5s ease, transform 0.5s ease;
 }
@@ -297,50 +316,6 @@ h3 {
   padding-left: 15px;
 }
 
-.card-heart {
-  color: black;
-}
-
-.coeurs-menu {
-  position: relative;
-  width: 22px;
-  height: 21px;
-  right: 20%;
-}
-
-@media (min-width: 768px) {
-  .coeurs-menu {
-    right: 20%;
-  }
-}
-.coeurs-menu i {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.coeurs-menu i:not(:hover) {
-  border: black;
-  opacity: 1;
-  color: white;
-  transition: opacity 0.3s ease-in-out;
-}
-
-.coeurs-menu i:hover {
-  opacity: 1;
-  color: rgb(147, 86, 220);
-  transition: opacity 0.3s ease-in-out;
-}
-
-.fa-regular.fa-heart {
-  opacity: 1;
-}
-
-.fa-solid.fa-heart {
-  opacity: 0;
-  color: rgb(147, 86, 220);
-}
-
 .entrees .plats .desserts {
   display: flex;
   width: 100%;
@@ -404,6 +379,7 @@ h3 {
   text-overflow: ellipsis;
   padding-right: 20%;
   padding-left: 20%;
+  padding-bottom: 10px;
 }
 
 .plats {
@@ -416,6 +392,7 @@ h3 {
   text-overflow: ellipsis;
   padding-right: 20%;
   padding-left: 20%;
+  padding-bottom: 10px;
 }
 
 .desserts {
@@ -428,6 +405,7 @@ h3 {
   text-overflow: ellipsis;
   padding-right: 20%;
   padding-left: 20%;
+  padding-bottom: 10px;
 }
 
 .entrees h2,
@@ -540,6 +518,11 @@ h3 {
   padding: 48px 25px 0px 25px;
 }
 
+@media (min-width: 768px) {
+  .Fonctionnement {
+    padding: 48px 150px 0px 150px;
+  }
+}
 .Fonctionnement button {
   position: relative;
   display: flex;
@@ -586,6 +569,12 @@ h3 {
 }
 
 /******RESA Resto*****/
+.button-link {
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
 .bouton-commander {
   display: flex;
   align-items: center;
@@ -613,11 +602,6 @@ h3 {
   transform: scale(1.2);
 }
 
-.button-link {
-  display: flex;
-  justify-content: center;
-}
-
 /*************Partie Restaurant**********/
 .restaurants {
   display: flex;
@@ -631,6 +615,12 @@ h3 {
   padding-bottom: 30px;
 }
 
+@media (min-width: 768px) {
+  .restaurants {
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+}
 .restaurant-title {
   display: flex;
   font-weight: 700;
@@ -711,21 +701,17 @@ h3 {
   margin: 0px;
 }
 
-.card-heart {
+.titre-menu .card-heart {
   position: relative;
   display: flex;
   width: 22px;
-  height: 21px;
+  height: 22px;
+  margin-right: 20px;
+  margin-top: 10px;
+  right: 34%;
 }
 
-.card-heart i {
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: white;
-}
-
-.card-heart i:not(:hover) {
+.card-heart .fas {
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
 }
@@ -735,13 +721,22 @@ h3 {
   transition: opacity 0.3s ease-in-out;
 }
 
+.fa-heart {
+  position: absolute;
+  font-size: 23px;
+  cursor: pointer;
+}
+
 .fa-regular.fa-heart {
   opacity: 1;
 }
 
 .fas.fa-heart {
   opacity: 0;
-  color: rgb(147, 86, 220);
+  background-image: linear-gradient(#FF79DA, #9356DC);
+  font-size: 23px;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
 }
 
 .restaurant-cards .card span {

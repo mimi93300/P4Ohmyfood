@@ -115,10 +115,15 @@
   height: 22px;
   margin-right: 20px;
   margin-top: 10px;
-  right: 34%;
+  right: 10%;
+  bottom: 5px;
 }
 
-
+@media (min-width: 768px) {
+  .titre-menu .card-heart{
+    right: 25%;
+  }
+}
 
 .card-heart .fas {
   opacity: 0;

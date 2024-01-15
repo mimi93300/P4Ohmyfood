@@ -167,7 +167,6 @@ h3 {
   padding-top: 10px;
   overflow: hidden;
   display: flex;
-  flex-direction: row;
   padding-left: 15px;
   padding-bottom: 10px;
   width: 100%;
@@ -179,8 +178,9 @@ h3 {
   flex-direction: column;
   display: flex;
   width: 90%;
-  white-space: nowrap;
   cursor: pointer;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 
@@ -268,13 +268,11 @@ h3 {
   margin-top: -15px;
   margin-bottom: -15px;
   background-color: #99E2D0;
-  margin-right: -10rem;
   border-radius: 0px 15px 15px 0px;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-shrink: 3;
-  transition: 1s;
+  transition: 2s;
   opacity: 0;
   cursor: pointer;
 }

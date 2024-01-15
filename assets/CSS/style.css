@@ -21,6 +21,8 @@ header {
   width: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: stretch;
+  gap: 40%;
   align-items: center;
   box-shadow: 0px 3px 0px 0px grey;
 }
@@ -49,13 +51,20 @@ header {
 
 /******header resto****/
 .header-menu {
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
+  width: 100%;
   display: flex;
-  gap: 40px;
+  flex-direction: row;
+  justify-content: stretch;
+  gap: 40%;
+  align-items: center;
 }
 
+@media (min-width: 768px) {
+  .header-menu {
+    justify-content: start;
+    gap: 40%;
+  }
+}
 .logo {
   height: 36px;
   width: 197px;
@@ -73,16 +82,18 @@ header {
 }
 
 .index-link {
+  font-size: 20px;
+  color: #101010;
   right: 39%;
-  position: relative;
   top: -7px;
 }
 
 @media (min-width: 768px) {
   .index-link {
-    position: relative;
-    top: 0px;
-    right: 30%;
+    font-size: 20px;
+    color: #101010;
+    right: 39%;
+    top: -7px;
   }
 }
 .fa-arrow-left {
@@ -365,7 +376,6 @@ h3 {
   padding-top: 10px;
   overflow: hidden;
   display: flex;
-  flex-direction: row;
   padding-left: 15px;
   padding-bottom: 10px;
   width: 100%;
@@ -376,8 +386,9 @@ h3 {
   flex-direction: column;
   display: flex;
   width: 90%;
-  white-space: nowrap;
   cursor: pointer;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .entrees {
@@ -462,13 +473,11 @@ h3 {
   margin-top: -15px;
   margin-bottom: -15px;
   background-color: #99E2D0;
-  margin-right: -10rem;
   border-radius: 0px 15px 15px 0px;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-shrink: 3;
-  transition: 1s;
+  transition: 2s;
   opacity: 0;
   cursor: pointer;
 }
@@ -712,22 +721,22 @@ h3 {
   margin: 0px;
 }
 
-.titre-menu .card-heart {
+.card-heart {
   position: relative;
   display: flex;
   width: 22px;
   height: 22px;
   margin-right: 20px;
   margin-top: 10px;
-  right: 10%;
+  right: 5%;
   bottom: 5px;
 }
-
 @media (min-width: 768px) {
-  .titre-menu .card-heart {
-    right: 25%;
+  .card-heart .card-heart {
+    right: 13%;
   }
 }
+
 .card-heart .fas {
   opacity: 0;
   transition: opacity 0.3s ease-in-out;

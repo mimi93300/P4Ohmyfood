@@ -56,6 +56,7 @@ body {
 
 /******header resto****/
 .header-menu {
+  position: relative;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -129,6 +130,11 @@ body {
   color: white;
 }
 
+@media (min-width: 768px) {
+  .footer__logo {
+    padding-bottom: 5px;
+  }
+}
 .footer__list {
   display: flex;
   flex-direction: column;
@@ -216,16 +222,9 @@ main {
   background: rgb(255, 255, 255);
 }
 
-@media (min-width: 768px) {
-  main {
-    padding-left: 11%;
-    width: 78%;
-  }
-}
 h1 {
   color: #000000;
   text-align: center;
-  width: 100%;
 }
 
 h3 {
@@ -300,7 +299,10 @@ h3 {
 .menu {
   margin-top: -30px;
   padding-top: 30px;
-  width: 100%;
+  padding-left: 10%;
+  padding-right: 10%;
+  margin-right: 10%;
+  margin-left: 10%;
   height: 100%;
   border-radius: 25px 25px;
   background: #F7F7F7;
@@ -322,27 +324,21 @@ h3 {
   position: relative;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   white-space: nowrap;
   font-size: 18px;
+  gap: 20px;
 }
 
 @media (min-width: 768px) {
   .titre-menu {
-    font-size: 25px;
+    font-size: 20px;
+    justify-content: center;
   }
 }
 .titre-menu .h2 {
   padding-left: 15px;
-}
-
-.entrees .plats .desserts {
-  display: flex;
-  width: 100%;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
 }
 
 .food {
@@ -352,21 +348,17 @@ h3 {
   width: 40px;
   padding-top: 5px;
   padding-bottom: 5px;
-  margin-left: 5px;
 }
 
 .card2 {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 0px;
-  isolation: isolate;
   width: 100%;
   background: #FFFFFF;
   box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
   border-radius: 15.0431px;
   margin-bottom: 25px;
-  margin-left: 7px;
 }
 
 .description {
@@ -376,62 +368,29 @@ h3 {
   padding-left: 15px;
   padding-bottom: 10px;
   width: 100%;
+  justify-content: space-between;
 }
 
 .text-info {
   white-space: nowrap;
   flex-direction: column;
   display: flex;
-  width: 90%;
   cursor: pointer;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
-.entrees {
+.entrees, .plats, .desserts {
   animation: showmenu 1s 1s both;
   font-family: "Roboto";
   font-style: normal;
-  margin-top: 0%;
-  margin-bottom: 0%;
   font-size: 18px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  padding-right: 5%;
-  padding-left: 5%;
-  padding-bottom: 10px;
-}
-
-.plats {
-  font-family: "Roboto";
-  font-style: normal;
-  margin-top: 0%;
-  margin-bottom: 0%;
-  font-size: 18px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  padding-right: 5%;
-  padding-left: 5%;
-  padding-bottom: 10px;
-}
-
-.desserts {
-  font-family: "Roboto";
-  font-style: normal;
-  margin-top: 0%;
-  margin-bottom: 0%;
-  font-size: 18px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  padding-right: 5%;
-  padding-left: 5%;
-  padding-bottom: 10px;
+  justify-content: space-between;
 }
 
 .entrees h2,
 .plats h2,
 .desserts h2 {
-  margin-left: 5px;
   border-bottom: 3px solid rgb(153, 226, 208);
   margin-bottom: 20px;
 }
@@ -457,32 +416,24 @@ h3 {
   padding-bottom: 5px;
 }
 
-@media (min-width: 768px) {
-  .prix {
-    position: relative;
-    top: 17px;
-    right: 16%;
-    padding-bottom: 0px;
-  }
-}
 .checkbar {
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-top: -15px;
-  margin-bottom: -15px;
   background-color: #99E2D0;
   border-radius: 0px 15px 15px 0px;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: 2s;
+  width: 65px;
+  height: 83px;
+  transition: 1s;
   opacity: 0;
   cursor: pointer;
+  transform: translate(62px);
 }
 
 .card2:hover .checkbar {
   margin-right: 0;
   opacity: 1;
+  transform: translate(0px);
 }
 
 .fa-check {
@@ -591,24 +542,22 @@ h3 {
   padding-bottom: 20px;
   display: flex;
   justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 30px;
 }
 
 .bouton-commander {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 30%;
   border: none;
-  padding: 30px;
+  padding: 20px 50px 20px 50px;
   background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
-  transition: background-color 0.3s ease;
   box-shadow: 2px 1px 16px -3px #000000;
   border-radius: 25px;
   color: #FFFFFF;
   font-weight: 500;
   font-size: 16px;
-  margin-top: 20px;
-  margin-bottom: 30px;
   cursor: pointer;
   transition: background-color 0.5s ease, transform 0.5s ease;
 }
@@ -720,19 +669,9 @@ h3 {
 }
 
 .card-heart {
-  position: relative;
   display: flex;
   width: 22px;
   height: 22px;
-  margin-right: 20px;
-  margin-top: 10px;
-  right: 5%;
-  bottom: 5px;
-}
-@media (min-width: 768px) {
-  .card-heart .card-heart {
-    right: 13%;
-  }
 }
 
 .card-heart .fas {

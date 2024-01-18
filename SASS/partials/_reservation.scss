@@ -1,115 +1,111 @@
 /*************Partie Fonctionnement***********/
 .choix {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    gap: 20px;
-  }
-  
-  @media (min-width: 768px) {
-    .choix {
-      margin-bottom: 20px;
-      display: flex;
-      flex-direction: row;
-      width: 100%;
-      gap: 10%;
-    }
-  }
-  
-  
-  .Fonctionnement {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 48px 25px 0px 25px;
-  }
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 20px;
+}
 
-  @media (min-width: 768px) {
-    .Fonctionnement{
-      padding: 48px 150px 0px 150px;
-    }
-  }
-  
-  .Fonctionnement button {
-    position: relative;
+@media (min-width: 768px) {
+  .choix {
+    margin-bottom: 20px;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 20px;
+    flex-direction: row;
     width: 100%;
-    gap: 20px;
-    padding: 30px;
-    background-color: var(--Background, #F6F6F6);
-    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
-    border: none;
+    gap: 10%;
   }
-  
-  .etape {
-    position: absolute;
-    left: -11px;
-    background-color: rgba(147, 86, 220, 1);
-    color: white;
-    border-radius: 50%;
-    padding: 7px 10px 7px 10px;
-    font-size: 12px;
+}
+
+
+.Fonctionnement {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 48px 25px 0px 25px;
+}
+
+@media (min-width: 768px) {
+  .Fonctionnement {
+    padding: 48px 150px 0px 150px;
   }
-  
-  
-  .Fonctionnement button i {
-    color: rgba(126, 126, 126, 1);
-    margin-right: 10px;
-  }
-  
-  
-  .fa-store:before {
-    color: rgba(147, 86, 220, 1);
-  }
-  
-  .title-fonctionnement {
-    width: 100%;
-    display: flex;
-  }
-  
-  .text-fonctionnement {
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    margin-left: 10px;
-  }
+}
+
+.Fonctionnement button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  width: 100%;
+  gap: 20px;
+  padding: 30px;
+  background-color: var(--Background, #F6F6F6);
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+  border: none;
+}
+
+.etape {
+  position: absolute;
+  left: -11px;
+  background-color: rgba(147, 86, 220, 1);
+  color: white;
+  border-radius: 50%;
+  padding: 7px 10px 7px 10px;
+  font-size: 12px;
+}
+
+
+.Fonctionnement button i {
+  color: rgba(126, 126, 126, 1);
+  margin-right: 10px;
+}
+
+
+.fa-store:before {
+  color: rgba(147, 86, 220, 1);
+}
+
+.title-fonctionnement {
+  width: 100%;
+  display: flex;
+}
+
+.text-fonctionnement {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  margin-left: 10px;
+}
 
 
 /******RESA Resto*****/
-.button-link{
+.button-link {
   padding-bottom: 20px;
   display: flex;
   justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 30px;
 }
 
 .bouton-commander {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 30%;
-    border: none;
-    padding: 30px;
-    background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
-    transition: background-color 0.3s ease;
-    box-shadow: 2px 1px 16px -3px #000000;
-    border-radius: 25px;
-    color: #FFFFFF;
-    font-weight: 500;
-    font-size: 16px;
-    margin-top: 20px;
-    margin-bottom: 30px;
-    cursor: pointer;
-    transition: background-color 0.5s ease, transform 0.5s ease;
-  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  padding: 20px 50px 20px 50px;
+  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  box-shadow: 2px 1px 16px -3px #000000;
+  border-radius: 25px;
+  color: #FFFFFF;
+  font-weight: 500;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.5s ease, transform 0.5s ease;
+}
 
-  .bouton-commander:hover {
-    background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
-    transform: matrix(1, 0, 0, 1, 0, 0);
-    transform: scale(1.2); 
-  }
-
-  
+.bouton-commander:hover {
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
+  transform: matrix(1, 0, 0, 1, 0, 0);
+  transform: scale(1.2);
+}

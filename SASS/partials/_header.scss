@@ -25,13 +25,27 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
+  padding-left: 20px;
+  height: 50px;
 }
 
 .city i {
   font-weight: 900;
 }
 
+.localisation {
+  background:  #f3f3f3;
+  border: none;
+  font-size: 16px;
+  font-weight: 800;
+  font-family: "Roboto", sans-serif;
+  padding-left: 17px;
+  color: black;
+}
+
+.input .placeholder{
+  color: #101010;
+}
 
 /******header resto****/
 

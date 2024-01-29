@@ -45,13 +45,13 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
   width: 100%;
   height: 40px;
 }
 
 .city i {
   font-weight: 900;
+  color: #353535;
 }
 
 .localisation {
@@ -60,12 +60,14 @@ body {
   font-size: 16px;
   font-weight: 800;
   font-family: "Roboto", sans-serif;
-  padding-left: 17px;
   color: black;
+  width: 150px;
+  outline: none;
 }
 
-.input .placeholder {
-  color: #101010;
+.localisation::placeholder {
+  color: #353535;
+  text-align: center;
 }
 
 /******header resto****/
@@ -124,7 +126,7 @@ body {
 
 @media (min-width: 768px) {
   .footer {
-    padding: 47px 22px 47px 22px;
+    padding: 47px 22px 20px 22px;
   }
 }
 .container {
@@ -244,7 +246,7 @@ main {
 h1 {
   color: #000000;
   text-align: center;
-  font-size: 40px;
+  font-size: 24px;
 }
 
 h3 {
@@ -262,8 +264,14 @@ h3 {
 .resa {
   color: #000000;
   margin-bottom: 10px;
+  font-size: 24px;
 }
 
+@media (min-width: 768px) {
+  .resa {
+    font-size: 40px;
+  }
+}
 .explorer p {
   color: black;
   font-family: "Roboto", sans-serif;
@@ -285,7 +293,6 @@ h3 {
   box-shadow: 2px 1px 16px -3px #000000;
   border: none;
   cursor: pointer;
-  transition: background-color 0.5s ease, transform 0.5s ease;
 }
 
 .explorer button:hover {
@@ -293,7 +300,8 @@ h3 {
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
   transform: matrix(1, 0, 0, 1, 0, 0);
   cursor: pointer;
-  transform: scale(1.2);
+  transform: scale(1.02);
+  transition: 0.5s;
 }
 
 @media (min-width: 768px) {
@@ -426,6 +434,9 @@ h3 {
   flex-direction: column;
   display: flex;
   cursor: pointer;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .entrees, .plats, .desserts {
@@ -488,6 +499,20 @@ h3 {
 .card2:hover .checkbar {
   margin-right: 0;
   animation: slider-left 1s ease-in-out forwards;
+}
+
+@keyframes slider-right {
+  from {
+    transform: translateX(0px);
+    width: 69px;
+  }
+  to {
+    transform: translateX(100px);
+    width: 0;
+  }
+}
+:not(:hover) {
+  transition: 1s;
 }
 
 .fa-check {
@@ -614,14 +639,14 @@ h3 {
   font-weight: 500;
   font-size: 16px;
   cursor: pointer;
-  transition: background-color 0.5s ease, transform 0.5s ease;
 }
 
 .bouton-commander:hover {
   background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
   transform: matrix(1, 0, 0, 1, 0, 0);
-  transform: scale(1.2);
+  transform: scale(1.03);
+  transition: 0.5s;
 }
 
 /*************Partie Restaurant**********/
@@ -762,14 +787,14 @@ h3 {
 .restaurant-cards .card span {
   display: flex;
   position: absolute;
-  right: 5%;
-  top: 25px;
+  right: 8px;
+  top: 11px;
   width: 100px;
-  height: 25px;
+  padding: 6px 9px;
   justify-content: center;
   background-color: #99E2D0;
-  padding-top: 4px;
   color: #1B6150;
+  border-radius: 2px;
 }
 
 @media (min-width: 768px) {

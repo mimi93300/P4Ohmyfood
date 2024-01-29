@@ -149,14 +149,14 @@
 .restaurant-cards .card span {
   display: flex;
   position: absolute;
-  right: 5%;
-  top: 25px;
+  right: 8px;
+  top: 11px;
   width: 100px;
-  height: 25px;
+  padding: 6px 9px;
   justify-content: center;
   background-color: #99E2D0;
-  padding-top: 4px;
   color: #1B6150;
+  border-radius: 2px;
 }
 
 @media (min-width: 768px) {

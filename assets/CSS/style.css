@@ -21,16 +21,8 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: stretch;
-  gap: 40%;
-  align-items: center;
-  box-shadow: 0px 3px 0px 0px grey;
 }
 
-@media (min-width: 768px) {
-  .header-index {
-    box-shadow: none;
-  }
-}
 .header .logo {
   padding-bottom: 15px;
   background-color: #ffffff;
@@ -49,18 +41,12 @@ body {
   height: 40px;
 }
 
-.city i {
-  font-weight: 900;
-  color: #353535;
-}
-
 .localisation {
   background-color: var(--Grey-2, #EAEAEA);
   border: none;
   font-size: 16px;
   font-weight: 800;
   font-family: "Roboto", sans-serif;
-  color: black;
   width: 150px;
   outline: none;
 }
@@ -84,7 +70,6 @@ body {
   height: 36px;
   width: 197px;
   margin-top: 12px;
-  margin-bottom: 10px;
 }
 
 .en-tete {
@@ -111,7 +96,6 @@ body {
 
 .fa-arrow-left {
   color: black;
-  align-items: flex-start;
 }
 
 .footer .footer {
@@ -131,8 +115,6 @@ body {
 }
 .container {
   flex-direction: column;
-  /*padding: 22px 25px 22px 25px;*/
-  background-color: #353535;
 }
 
 @media (min-width: 768px) {
@@ -159,7 +141,6 @@ body {
 .footer__list {
   display: flex;
   flex-direction: column;
-  list-style: none;
   margin: 0;
   padding: 0;
 }
@@ -240,7 +221,6 @@ body {
 main {
   display: flex;
   flex-direction: column;
-  background: rgb(255, 255, 255);
 }
 
 h1 {
@@ -262,7 +242,6 @@ h3 {
 }
 
 .resa {
-  color: #000000;
   margin-bottom: 10px;
   font-size: 24px;
 }
@@ -273,19 +252,13 @@ h3 {
   }
 }
 .explorer p {
-  color: black;
-  font-family: "Roboto", sans-serif;
   font-weight: 300;
   text-align: center;
-  align-items: center;
   padding: 0px 40px;
   margin-bottom: 30px;
 }
 
 .explorer button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   padding: 10px 15px 10px 15px;
   color: white;
   font-size: 16px;
@@ -320,8 +293,6 @@ h3 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 16px;
-  color: white;
   background-color: #F6F6F6;
 }
 
@@ -338,7 +309,7 @@ h3 {
 }
 .fade1 {
   animation: fade 1.5s ease-in-out forwards;
-  animation-delay: 0;
+  animation-delay: 0ms;
 }
 
 .fade2 {
@@ -381,14 +352,12 @@ h3 {
 
 .titre-menu {
   font-family: Shrikhand;
-  background: #F6F6F6;
   position: relative;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   white-space: nowrap;
-  font-size: 20px;
   gap: 20px;
 }
 
@@ -442,11 +411,10 @@ h3 {
   text-overflow: ellipsis;
 }
 
-.entrees, .plats, .desserts {
-  font-family: "Roboto";
-  font-style: normal;
+.entrees,
+.plats,
+.desserts {
   font-size: 18px;
-  justify-content: space-between;
 }
 
 .entrees h2,
@@ -607,16 +575,12 @@ h3 {
 }
 
 .bouton-commander {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   border: none;
   padding: 20px 50px 20px 50px;
   background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
   box-shadow: 2px 1px 16px -3px #000000;
   border-radius: 25px;
   color: #FFFFFF;
-  font-weight: 500;
   font-size: 16px;
   cursor: pointer;
 }
@@ -624,7 +588,6 @@ h3 {
 .bouton-commander:hover {
   background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
-  transform: matrix(1, 0, 0, 1, 0, 0);
   transform: scale(1.04);
   transition: 0.5s;
 }
@@ -761,7 +724,6 @@ h3 {
   background-image: linear-gradient(#FF79DA, #9356DC);
   font-size: 23px;
   -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
 }
 
 .restaurant-cards .card span {

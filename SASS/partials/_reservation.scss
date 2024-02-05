@@ -90,16 +90,12 @@
 }
 
 .bouton-commander {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   border: none;
   padding: 20px 50px 20px 50px;
   background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
   box-shadow: 2px 1px 16px -3px #000000;
   border-radius: 25px;
   color: #FFFFFF;
-  font-weight: 500;
   font-size: 16px;
   cursor: pointer;
 }
@@ -107,7 +103,6 @@
 .bouton-commander:hover {
   background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
-  transform: matrix(1, 0, 0, 1, 0, 0);
   transform: scale(1.04);
   transition: 0.5s;
 }

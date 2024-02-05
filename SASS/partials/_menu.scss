@@ -2,7 +2,6 @@
 main {
   display: flex;
   flex-direction: column;
-  background: rgba(255, 255, 255, 1);
 }
 
 h1 {
@@ -24,13 +23,12 @@ h3 {
 }
 
 .resa {
-  color: #000000;
   margin-bottom: 10px;
   font-size: 24px;
 }
 
-@media (min-width: 768px){
-  .resa{
+@media (min-width: 768px) {
+  .resa {
     font-size: 40px;
   }
 }
@@ -40,20 +38,14 @@ h3 {
 
 
 .explorer p {
-  color: black;
-  font-family: "Roboto", sans-serif;
   font-weight: 300;
   text-align: center;
-  align-items: center;
   padding: 0px 40px;
   margin-bottom: 30px;
 
 }
 
 .explorer button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   padding: 10px 15px 10px 15px;
   color: white;
   font-size: 16px;
@@ -91,19 +83,18 @@ h3 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 16px;
-  color: white;
   background-color: #F6F6F6;
 }
 
 /*****Menu resto*****/
 
 @keyframes fade {
-  from{
-transform: translateY(20px);
-opacity: 0;
+  from {
+    transform: translateY(20px);
+    opacity: 0;
   }
-  to{
+
+  to {
     transform: translateY(0);
     opacity: 1;
   }
@@ -111,7 +102,7 @@ opacity: 0;
 
 .fade1 {
   animation: fade 1.5s ease-in-out forwards;
-  animation-delay: 0;
+  animation-delay: 0ms;
 }
 
 .fade2 {
@@ -136,7 +127,7 @@ opacity: 0;
 }
 
 @media (min-width: 768px) {
-  .menu{
+  .menu {
     padding-left: 10%;
     padding-right: 10%;
     margin-right: 10%;
@@ -157,14 +148,12 @@ opacity: 0;
 
 .titre-menu {
   font-family: Shrikhand;
-  background: #F6F6F6;
   position: relative;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   white-space: nowrap;
-  font-size: 20px;
   gap: 20px;
 }
 
@@ -224,11 +213,10 @@ opacity: 0;
 }
 
 
-.entrees, .plats, .desserts {
-  font-family: 'Roboto';
-  font-style: normal;
+.entrees,
+.plats,
+.desserts {
   font-size: 18px;
-  justify-content: space-between;
 }
 
 
@@ -292,11 +280,11 @@ opacity: 0;
 
 .card2:hover .fa-check {
   animation: spin 1s ease-in-out forwards;
- }
+}
 
 @keyframes spin {
   0% {
-    
+
     transform: rotate(-270deg);
   }
 

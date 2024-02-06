@@ -77,3 +77,7 @@
 .footer__icon {
   color: white;
 }
+
+.footer__listElt:nth-child(1) .footer__link {
+  gap: 10px;
+}

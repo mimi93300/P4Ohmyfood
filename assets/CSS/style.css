@@ -170,6 +170,10 @@ body {
   color: white;
 }
 
+.footer__listElt:nth-child(1) .footer__link {
+  gap: 10px;
+}
+
 .loader {
   position: fixed;
   inset: 0px;
@@ -724,6 +728,7 @@ h3 {
   background-image: linear-gradient(#FF79DA, #9356DC);
   font-size: 23px;
   -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
 }
 
 .restaurant-cards .card span {
